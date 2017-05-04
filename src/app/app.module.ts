@@ -5,6 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+// Shared
+import { SharedModule } from './shared/shared.module';
+
+// Routers
+import { AppRoutingModule } from './app-router.module';
+
+// Sections
+import { HomeModule } from './sections/home/home.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +21,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    SharedModule,
+    HomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
