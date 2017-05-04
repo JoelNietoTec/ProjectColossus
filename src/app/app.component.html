@@ -1,9 +1,13 @@
 <app-navbar></app-navbar>
 <div class="container-fluid">
   <div class="row">
-      <app-sidebar class="col-md-2"></app-sidebar>
+    <div class="col-md-2 collapse in" id="sidebar">
+      <app-sidebar></app-sidebar>
+    </div>
     <div class="col-md-10">
       <div class="container">
+        <a href="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-lg" aria-hidden="true"></i></a>
+        <hr>
         <router-outlet></router-outlet>
       </div>
     </div>
