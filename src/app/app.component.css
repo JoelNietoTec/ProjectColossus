@@ -81,6 +81,11 @@
           transition-duration: .2s;
 }
 
+
+#sidebar {
+  padding: 0 !important;
+}
+
 #sidebar.collapsing {
   opacity: 0.8;
   width: 0;

@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-router.module';
 
 // Sections
 import { HomeModule } from './sections/home/home.module';
+import { UsersModule } from './sections/users/users.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HomeModule } from './sections/home/home.module';
     HttpModule,
     SharedModule,
     HomeModule,
+    UsersModule,
     AppRoutingModule
   ],
   providers: [],
